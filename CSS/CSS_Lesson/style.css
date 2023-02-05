@@ -1,0 +1,64 @@
+h1{
+    color: coral;
+    text-align: center;
+    /* background-color: rgb(136, 114, 114); */
+    font-size: 50px;
+    /* text-shadow: 2px 2px; */
+    
+}
+
+/* p {
+    width: 250px;
+    padding: 15px;
+    border: 2px solid lightblue;
+    text-align: justify;
+    text-justify: inter-word;
+  } */
+  *{
+    color: red;
+    font-size: 30px;
+  }
+
+  h2{
+    text-align: center;
+    color: green;
+  }
+  a[
+    title="google"]{
+        color; yellow; }
+
+        /* id selector */
+  
+#idselector{
+            font-size: 50px;
+
+        }
+.classselector{
+    color: brown;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    line-height: 100px;
+    text-transform: capitalize;
+    
+}
+
+/* descendent selector */
+#desc a {
+    color: green;
+}
+ #child>a{
+  color: brown;
+ }
+
+ /* pseudo selector */
+ a: link{
+  color: red;
+  text-decoration: none
+ }
+
+
+
+
+  
+    
+  
