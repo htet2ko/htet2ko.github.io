@@ -1,0 +1,35 @@
+
+body{
+    background-color: skyblue;
+}
+h1{
+    text-align: center;
+    color: red;
+}
+
+#form{
+    width: 50%;
+    /* background-color: blueviolet; */
+    margin: auto;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="date"]  {
+    width: 100%;
+    height: 35px;
+   }
+
+   input[type="text"],input[type="email"],input[type="number"],input[type="date"]:focus{
+    border: 4px solid gray;
+   }
+
+   input[type="radio"]:checked + label {
+    color: red;
+   }
+
+   input[type="checkbox"] :enabled + label{
+    color: red;
+    font-style: normal;
+   }
+
+
+   
+   
