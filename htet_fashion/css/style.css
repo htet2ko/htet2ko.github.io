@@ -45,7 +45,7 @@
 
 .bunner_image{
     height: 400px;
-    width: 1980px;
+    width: 100%;
 }
 
 
@@ -95,8 +95,51 @@
 }
 
 
+/* promotion */
 
+.title{
+    margin-top: 50px;
+    margin-left: 90px;
+    font-weight: unset;
 
+}
 
+.abcd{
+   width: 160px;
+   margin-left: 90px;
+   border: 2px solid red;
+}
 
+.promotion_item div{
+    height: 200px;
+    width: 200px;
+    /* padding: 20px; */
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px solid red;
+    box-shadow: 5px;
 
+}
+ .promotion_item {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+    margin-left: 50px;
+    /* margin-right: 50px; */
+    padding: 20px;
+    
+
+ }
+ .promotion_item div img{
+    width: 200px;
+    height: 200px;
+    
+ }
+ .discount{
+    position: relative;
+    bottom: 205px;
+    left: 130px;
+    font-size: small;
+    color: red;
+ }
+   
