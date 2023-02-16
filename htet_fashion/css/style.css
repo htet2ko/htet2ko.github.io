@@ -45,7 +45,7 @@
 
 .bunner_image{
     height: 400px;
-    width: 1980px;
+    width: 100%;
 }
 
 
@@ -94,6 +94,17 @@
     color: gray;
 }
 
+
+/* promotion */
+
+.title{
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+ .divided{
+
+ }
 
 
 
