@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid red; */
+}
+
+section nav{
+    /* display: flex; */
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    /* border: 2px solid red; */
+}
+
+
+
+section nav .logo {
+    /* width: 50px; */
+    cursor: pointer;
+    /* margin: 7px 0; */
+    /* border: 2px solid red; */
+    float: left;
+    margin: 10px;
+    /* display: inline-block; */
+    
+}
+section nav ul{
+    list-style: none;
+    float: right;
+    /* border: 2px solid red; */
+    margin: 10px;
+    
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #fac031;
+}
+
+h1{
+    margin: 0;
+    /* padding: 10px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    /* width: 100%; */
+    text-align: center;
+    color: #ca5a10;
+    font-size: 25px;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+}
+h1 span{
+    opacity: 0;
+    display: inline-block;
+    animation: htetkoko 2s linear forwards;
+}
+
+
+
+@keyframes htetkoko
+{
+    0%
+    {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+       
+    }
+    100%
+    {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+        
+        
+    }    
+}
+
+h1 span:nth-child(1)
+{
+    animation-delay: 1s;
+}
+h1 span:nth-child(2)
+{
+    animation-delay: 2s;
+}
+h1 span:nth-child(3)
+{
+    animation-delay: 2.5s;
+}
