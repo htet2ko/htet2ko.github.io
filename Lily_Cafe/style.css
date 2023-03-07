@@ -225,11 +225,7 @@ h1 span:nth-child(8)
 
 .about{
     width: 100%;
-    /* height: 100vh; */
     padding: 10px 0 0 0;
-    /* background-image: url(images/about_bg.jpg);
-    background-size: cover;
-    background-position: center; */
 }
 
 .about .about_main{
@@ -249,10 +245,6 @@ h1 span:nth-child(8)
     bottom: 40px;
 }
 
-/* .about .about_main .about_text h1 span{
-    color: #facc22;
-    margin-right: 15px;
-} */
 
 .about .about_main .about_text h3{
     position: relative;
@@ -391,7 +383,7 @@ h1 span:nth-child(8)
 }
 
 .menu h1 span{
-    color: #facc22;
+    color: #ca5a10;
     margin-left: 15px;
 }
 
@@ -579,9 +571,7 @@ h1 span:nth-child(8)
     width: 100%;
 }
 
-/* .offer .offer_box .offer_card_1 .offer_tag .offer_btn i{
-    margin-right: 8px;
-} */
+
 
 .offer .offer_box .offer_card_2{
     width: 720px;
@@ -651,9 +641,7 @@ h1 span:nth-child(8)
     width: 100%;
 }
 
-/* .offer .offer_box .offer_card_2 .offer_tag .offer_btn i{
-    margin-right: 8px;
-} */
+
 
 
 
