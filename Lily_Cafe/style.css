@@ -80,7 +80,7 @@ h1{
     text-align: center;
     color: #ca5a10;
     font-size: 25px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     letter-spacing: 0.2em;
     cursor: pointer;
 }
