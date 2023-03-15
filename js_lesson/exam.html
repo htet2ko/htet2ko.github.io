@@ -4,9 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exam Result</title>
 </head>
 <body>
-    
+    <h1>
+        <center>Exam Reuslt</center>
+    </h1>
+
+        <form name="myForm">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"> <br> <br>
+            <label for="myanmar">Myanmar</label> 
+            <input type="number" name="myanmar" id="myanmar"> <br><br>
+            <label for="english">English</label> 
+            <input type="number" name="english" id="english"> <br><br>
+            <label for="mathematics">Mathematics</label> 
+            <input type="number" name="mathematics" id="mathematics"> <br><br>
+            <label for="chemistry">Chemistry</label> 
+            <input type="number" name="chemistry" id="chemistry"> <br><br>
+            <label for="physics">Physics</label> 
+            <input type="number" name="physics" id="physics"> <br><br>
+            <label for="">Bio</label> 
+            <input type="number" name="bio" id="Bio"> <br><br>
+           
+         </form>
+
+         <button type="button" onclick="result()">Result</button>
+
+         <script>
+            function result(){
+                // alert ('Ok');
+                let name=document.myForm.name.value;
+                // console.log(name);
+                let myanmar=document.myForm.myanmar.value;
+                let english=document.myForm.english.value;
+                let mathematics=document.myForm.mathematics.value;
+                let chemistry=document.myForm.chemistry.value;
+                let physics=document.myForm.physics.value;
+                let bio=document.myForm.bio.value;
+                // console.log(myanmar,english,mathematics,chemistry,physics,bio);
+
+                if (myanmar >= 40 && english >= 40 && mathematics >=40 && chemistry >= 40 && physics >= 40 && bio >=40)
+                 {
+                    if (myanmar >= 75 || english >= 75 || mathematics >=80 || chemistry >= 80 || physics >= 80 || bio >=75)
+                 { if (myanmar >= 74 && english >= 40 && mathematics >=40 && chemistry >= 40 && physics >= 40 && bio >=40) 
+                    {
+                    document.write(name+'<h1>Distinction with Myanmar</h1>')
+                    
+                    } 
+                    if (myanmar >= 40 && english >= 75 && mathematics >=40 && chemistry >= 40 && physics >= 40 && bio >=40) 
+                    {
+                    document.write(name+'<h1>Distinction with English</h1>')
+                    
+                    }
+
+                    if (myanmar >= 40 && english >= 40 && mathematics >=80 && chemistry >= 40 && physics >= 40 && bio >=40) 
+                    {
+                    document.write(name+'<h1>Distinction with Mathematics</h1>')
+                    
+                    }
+
+                    if (myanmar >= 40 && english >= 40 && mathematics >=40 && chemistry >= 80 && physics >= 40 && bio >=40) 
+                    {
+                    document.write(name+'<h1>Distinction with Chemistry</h1>')
+                    
+                    }
+
+                    if (myanmar >= 40 && english >= 40 && mathematics >=40 && chemistry >= 40 && physics >= 80 && bio >=40) 
+                    {
+                    document.write(name+'<h1>Distinction with Chemistry</h1>')
+                    
+                    }
+
+                    if (myanmar >= 40 && english >= 40 && mathematics >=40 && chemistry >= 40 && physics >= 40 && bio >=75) 
+                    {
+                    document.write(name+'<h1>Distinction with Bio</h1>')
+                    
+                    }
+                 
+                    else 
+                    {
+                    
+                    }
+
+
+                    document.write(name+'<h1>Distinction</h1>')
+                }
+
+                else{
+                    document.write(name+'<h1>No Distinction</h1>')
+                }                  
+                    document.write(name+'<h1>Pass</h1>')
+                }
+
+                else{
+                    document.write(name+'<h1>Fail</h1>')
+                }
+
+            }
+
+
+
+
+
+// if (myanmar >= 80 && english >= 40 && mathematics >=40 && chemistry >= 40 && physics >= 40 && bio >=40)
+// {       
+//      document.write(name+'<h1>Distinction with Myanmar</h1>')    
+// } 
+// if (myanmar >= 40 && english >= 80 && mathematics >=40 && chemistry >= 40 && physics >= 40 && bio >=40)
+// {
+//         document.write(name+'<h1>Distinction with English</h1>')
+// }
+// if (myanmar >= 40 && english >= 40 && mathematics >=80 && chemistry >= 40 && physics >= 40 && bio >=40)
+// {
+//         document.write(name+'<h1>Distinction with Mathemitics </h1>')
+// }
+// else 
+// {
+//         document.write(name+'<h1>NO Distinction</h1>')
+// }
+
+         </script>
+
+
+
+
+
 </body>
 </html>
+
+
