@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body onload="big()">
+    <h1>Event Lesson</h1>
+    <img src="../H&K/images/camera_1.png" id="myImage" alt="" width="300" height="300" onmouseover="big()" onmouseout="normal()">
+
+
+    <input type="text" id="myInput" onkeyup="sayHi()">
+
+    <p id="result"></p>
+
+    <script>
+            function big(){
+                //alert('ok');
+                document.getElementById('myImage').style.width='500px';
+                document.getElementById('myImage').style.height='500px';
+            }
+
+            function normal(){
+                document.getElementById('myImage').style.width='300px';
+                document.getElementById('myImage').style.height='300px';
+            }
+
+            function sayHi(){
+                let res=document.getElementById('myInput').value;
+                document.getElementById('result').innerHTML=res;
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nihil rerum aliquid quod, autem ducimus nobis. Hic velit dicta doloremque, modi aliquam soluta commodi voluptatum deleniti? Ipsa amet culpa consequatur.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fadein">Fadein</button>
+    <button id="fadeout">Fadeout</button>
+    <button id="fadetoggle">FadeToggle</button>
+    <button id="fadeto">FadeTo</button>
+    <button id="fadeto_2">FadeTo 2</button>
+
+
+
+
+
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#hide').click(function(){
+                $('p').hide(3000,function(){
+                    alert('p tag is hide')
+                })
+            })
+
+            $('#show').click(function(){
+                $('p').show('slow')
+            })
+            $('#toggle').click(function(){
+                $('p').toggle(1000)
+            })
+            $('#fadeout').click(function(){
+                $('p').fadeOut('slow')
+            })
+
+            $('#fadein').click(function(){
+                $('p').fadeIn('slow')
+            })
+
+            $('#fadetoggle').click(function(){
+                $('p').fadeToggle('slow')
+            })
+
+            $('#fadeto').click(function(){
+                $('p').fadeTo(1000,0.2)
+            })
+
+            $('#fadeto_2').click(function(){
+                $('p').fadeTo(1000,1)
+            })
+
+        })
+    </script>
+</body>
+</html>

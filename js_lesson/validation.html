@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+    <h1>
+        JS Validation
+    </h1>
+
+    <form action="register.php" onsubmit=" return checkValue()">
+
+        Name: <input type="text" id="name"> <br>
+        Email: <input type="email" id="email"> <br>
+        Password: <input type="password" id="password"> <br>
+        Confirm Password: <input type="password" id="confirm_password"> <br>
+        <br>
+        <input type="submit" value="Register">
+
+    </form>
+
+    <script>
+            function checkValue() {
+                let name=document.getElementById('name').value;
+                //console.log(name);
+                if (name=='') {
+                    document.getElementById('name').style.border='1px solid red';
+                    document.getElementById('name_error').innerText="name Field Required";
+                    
+                    
+                }
+                else{
+                    return true;
+                }
+                return false;
+                
+
+                
+            }
+    </script>
+</body>
+</html>
