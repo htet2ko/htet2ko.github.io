@@ -37,7 +37,7 @@
             <div class="icons">
                 <i class="fa-solid fa-magnifying-glass nav_icon"></i>
                 <i class="fa-solid fa-heart nav_icon"></i>
-                <i class="fa-solid fa-cart-shopping nav_icon"></i>
+                <i class="fa-solid fa-cart-shopping nav_icon" ></i>
                 <a href="signup.html"><i class="fa-solid fa-user nav_icon"></i></a>
             </div>
         </nav>  
@@ -75,7 +75,7 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                 </div>
-                <a href="order.html" class="btn"><i class="fa-solid fa-ice-cream btn1"></i>Order Now</a>
+                <a  class="btn addToCart" data-id="1" data-name="Bubble_Waffle_Ice-cream" data-price="4300"><i class="fa-solid fa-ice-cream btn1"></i>Add To Cart</a>
             </div>
         </div>
 
@@ -983,7 +983,52 @@
      <!--Footer End-->
 
     
+     <script src="jquery.min.js"></script>
 
+     <script>
+        $(document).ready(function () {
+            $('.addToCart').click(function(){
+                let item_id = $(this).data('id');
+                let item_name = $(this).data('name');
+                let item_price = $(this).data('price');
+
+                console.log(item_id, item_name, item_price);
+
+                let shop_item ={
+                    id : item_id,
+                    name : item_name,
+                    price : item_price,
+                    qty : 1
+                }
+                console.log(shop_item);
+
+                let shopString = localStorage.getItem('shops');
+                let shopArray;
+                if(shopString==null){
+                    shopArray=[];
+                }
+                else{
+                    shopArray= JSON.parse(shopString);
+
+                }
+
+                let status = false;
+                $.each(shopArray, function (i,v) {
+                    if (item_id == v.id) {
+                        status = true;
+                        v.qty
+                        
+                    }
+                    
+                })
+                shopArray.push(shop_item);
+                let shopData = JSON.stringify(shopArray);
+                localStorage.setItem('shops',shopData)
+
+            })
+            
+        })
+     </script>
 
 
     
