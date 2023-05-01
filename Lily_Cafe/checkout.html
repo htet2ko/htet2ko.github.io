@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lily Cafe</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="font/fontawesome/css/all.min.css">
+    <script src="font/fontawesome/js/all.min.js"></script>
+</head>
+<body>
+
+    <!-- Nav -->
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <h1>
+                    <span>L</span>
+                    <span>I</span>
+                    <span>L</span>
+                    <span>Y</span>
+                    <span>C</span>
+                    <span>A</span>
+                    <span>F</span>
+                    <span>E</span>
+                </h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallary.html">Gallary</a></li>
+                <li><a href="#Order">Order</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass nav_icon"></i>
+                <i class="fa-solid fa-heart nav_icon"></i>
+                <i class="fa-solid fa-cart-shopping nav_icon" ></i>
+                <a href="signup.html"><i class="fa-solid fa-user nav_icon"></i></a>
+            </div>
+        </nav>  
+    </section>
+
+  <div class="container my-5">
+    <table border="1" cellspacing="0" cellpadding="25">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+                <th>Item Qty</th>
+                <th>Sub Total</th>
+            </tr>
+        </thead>
+        <tbody id="item_body"></tbody>
+    </table>
+  </div>
+
+    
+     <script src="jquery.min.js"></script>
+
+     <script>
+        $(document).ready(function(){
+            function getData(){
+                let shopSpring=localStorage.getItem('shop');
+                if(shopSpring){
+                    let shopArray = JSON.parse(shopSpring);
+                    let data = '';
+                    let no = 1;
+                    let total = 0;
+                    $each(shopArray, function(i,v){
+                        data += `
+                        <tr>
+                            <td>${no++}</td>
+                            <td>${v.name}</td>
+                            <td>${v.price}</td>
+                            <td>${v.qty}</td>
+                            <td>${v.price* v.qty}</td>`
+                    });
+                    $('#item_body').html(data);
+                }
+            }
+        })
+     </script>
+
+     
+
+
+    
+
+    
+    
+</body>
+</html>
